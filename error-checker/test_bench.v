@@ -11,7 +11,7 @@ module test_bench;
  // Outputs
 
  wire [7:0] error;
-wire [7:0] BER;
+wire [7:0] total_error;
 
  // Instantiate the Unit Under Test (UUT)
 
@@ -21,7 +21,7 @@ wire [7:0] BER;
 
   .B(B),  
 
-.BER(BER),
+.total_error(total_error),
 
   .error(error)
 
