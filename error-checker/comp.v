@@ -3,12 +3,12 @@ module comp
 	input [7:0] A,
 	input [7:0] B, 
 	output reg [7:0] error,
-	output reg [7:0] BER
+	output reg [7:0] total_error
 );
 reg [7:0] count ;
 initial begin
 	error[7:0] <= 8'b0;
-	BER [7:0] <= 8'b0;
+	total_error [7:0] <= 8'b0;
 	count[7:0] <= 8'b0;
 end
 always @(A or B)
@@ -27,6 +27,6 @@ error[7] <= ( A[7] == B[7])? 1'b0 : 1'b1;
 count = count + 8'd8 ;
 end
 always @(*)begin
-BER =  BER + error[0]+error[1]+error[2]+ error[3] + error[4] +  error[5] +  error[6] +  error[7] ;
+total_error =  total_error + error[0]+error[1]+error[2]+ error[3] + error[4] +  error[5] +  error[6] +  error[7] ;
 end
 endmodule
