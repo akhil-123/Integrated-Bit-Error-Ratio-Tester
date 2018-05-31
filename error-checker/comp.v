@@ -3,9 +3,9 @@ module comp
 	input [7:0] A,
 	input [7:0] B, 
 	output reg [7:0] error,
-	output reg [7:0] total_error
+	output reg [7:0] total_error,
+	output reg [7:0] count
 );
-reg [7:0] count ;
 initial begin
 	error[7:0] <= 8'b0;
 	total_error [7:0] <= 8'b0;

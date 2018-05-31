@@ -12,6 +12,7 @@ module test_bench;
 
  wire [7:0] error;
 wire [7:0] total_error;
+wire [7:0] count;
 
  // Instantiate the Unit Under Test (UUT)
 
@@ -23,7 +24,10 @@ wire [7:0] total_error;
 
 .total_error(total_error),
 
-  .error(error)
+  .error(error),
+
+ .count(count)
+
 
  );
 
