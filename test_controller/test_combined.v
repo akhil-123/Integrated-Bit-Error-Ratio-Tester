@@ -1,18 +1,21 @@
 module test_combined;
  
  // Inputs
+ reg sel;
  reg clock;
  reg reset;
- 
+ reg [7:0] normal_input;
  // Outputs
  wire [7:0] error;
  wire [7:0] total_error;
  wire [31:0] count;
  
  // Instantiate the Unit Under Test (UUT)
- combined uut (
+ test_control uut (
+  .sel(sel),
   .clock(clock), 
-  .reset(reset), 
+  .reset(reset),
+  .normal_input(normal_input), 
   .error(error),
   .total_error(total_error),
   .count(count)
@@ -28,14 +31,52 @@ module test_combined;
   // Initialize Inputs
    
   reset = 0;
- 
+  sel = 1 ;
   // Wait 100 ns for global reset to finish
   #100;
       reset = 1;
+      sel = 1 ;
   #200;
   reset = 0;
+  sel = 1;
   // Add stimulus here
  
  end
+
+initial begin
+  // Initialize Inputs
+
+ normal_input = 8'b0;
+
+  // Wait 100 ns for global reset to finish
+
+  #100;
+
+        
+
+  // Add stimulus here
+
+  normal_input = 8'd8;
+
+  #20;
+
+  normal_input = 8'd100;
+
+  #20;
+
+  normal_input = 8'd250;
+
+  #20;
+
+  normal_input =  8'd0;
+
+  #20;
+
+  normal_input = -8'd5;
+
+  #20;
+ 
+ end
+
 
 endmodule
