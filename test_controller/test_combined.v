@@ -4,7 +4,9 @@ module test_combined;
  reg sel;
  reg clock;
  reg reset;
+ reg signed [2:0] taps ;
  reg [7:0] normal_input;
+
  // Outputs
  wire [7:0] error;
  wire [7:0] total_error;
@@ -15,6 +17,7 @@ module test_combined;
   .sel(sel),
   .clock(clock), 
   .reset(reset),
+  .taps(taps),
   .normal_input(normal_input), 
   .error(error),
   .total_error(total_error),
@@ -47,7 +50,7 @@ initial begin
   // Initialize Inputs
 
  normal_input = 8'b0;
-
+ taps = 3; 
   // Wait 100 ns for global reset to finish
 
   #100;
@@ -57,23 +60,23 @@ initial begin
   // Add stimulus here
 
   normal_input = 8'd8;
-
+taps = 3; 
   #20;
 
   normal_input = 8'd100;
-
+taps = 3; 
   #20;
 
   normal_input = 8'd250;
-
+taps = 3; 
   #20;
 
   normal_input =  8'd0;
-
+taps = 3; 
   #20;
 
   normal_input = -8'd5;
-
+taps = 3; 
   #20;
  
  end
