@@ -31,7 +31,25 @@
     background: #b4bac0;
 
 }*/
+p {
+  color : #006994 ;
+}
+h3 {
+  font: italic bold ;
+  text-transform: uppercase; 
+  color:blue;
+}
+body {
+    /* background: black url("try.jpg")*/ ;
+    /* background: #FFCC66; */
+     background: #FFFFFF;
+     background-repeat: no-repeat;
+     background-position: center;
+         background-size: cover;
+}   
 .wrap {
+   text-align: center;
+    /*color:white;*/
      width: 100vw;
     min-height: 250px;
     margin: 0 auto;
@@ -43,15 +61,17 @@
     }
 
     .left{
-         background: #dbdfe5;
-        width: 50vw;
+  /*       background: #dbdfe5;
+   */     width: 50vw;
         transition: width 1s ;
+        border: 1px solid black; 
     }
 
     .right{
-        background: #b4bac0;
-        width: 50vw;
+    /*    background: #b4bac0;
+     */   width: 50vw;
         transition: width 1s;
+        border: 0.5px solid black; 
     }
 /*
     .left:hover{
@@ -69,6 +89,7 @@
     }
 */
 .a {
+    /*color:green;*/
     text-transform: capitalize; 
 }
 input[type=text] {
@@ -81,7 +102,22 @@ input[type=text]:focus {
 }
 .wrap img
 {
-    float:right;
+    /*float:right center;*/
     width: 300px ; 
     height: 200px;      
+}
+.button {
+    background-color: #4CAF50;
+/*  background-color: green;*/
+    border: none;
+      color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: green; 
+/* background-color: blue;*/
 }
