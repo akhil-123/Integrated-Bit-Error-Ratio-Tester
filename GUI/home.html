@@ -6,35 +6,68 @@
 	<title> IBERT</title>
 </head>
 <body>
-	<div class="a">
+<div class="a" >
+
 	<h3 align = "center"><b>Integrated bit Error Ratio Tester</b></h3>
 	</div>	
     <div class="wrap" >
 
-        <div class ='left'><h3 align = "center">Input Selection</h3></div>
+        <div class ='left'>
+        <h3 align = "center">Input Selection</h3><br><p>
+        <label for="input1 ">Select the input you want?</label>
+        </p>
+        <p>
+        <input type="radio" name="input1" checked>Custom</input>
+        </p>
+        <p>
+        <input type="radio" name="input1">Test Pattern</input>
+        </p>
+        </div>
 
-        <div class ='right	'><h3 align = "center">Clock Frequency</h3></div>
-
-    </div>
-    <br>
-    <div class="wrap a">
-
-        <div class="left"><h3 align = "center">Test Pattern</h3></div>
-
-        <div class="right bg-alt"><h3 align = "center">System Clock Frequency</h3></div>
+        <div class ='right'>
+        <h3 align = "center">Clock Frequency</h3><br><p align="center">
+        Clock Frequency: <input type="text" name="search"> (in MHz)</p>
+        </div>
 
     </div>
     <br>
     <div class="wrap a">
 
         <div class="left">
-        <h3 align = "center">Pre-emphasis</h3>
-        <img src="pre-emphasis.png">
-        Tap1: <input type="text" name="search"><br><br>Tap2: <input type="text" name="search"><br><br>Tap3: <input type="text" name="search">
+        <h3 align = "center">Test Pattern</h3><br><p>
+        <label for="input2">Select the Test Pattern?</label></p>
+        <p>
+        <input type="radio" name="input2" checked>PRBS-7</input>
+        </p>
+        <p>
+        <input type="radio" name="input2">PRBS-13</input>
+        </p>
         </div>
 
-        <div class="right bg-alt"><h3 align = "center">BER</h3></div>
+        <div class="right bg-alt">
+        <h3 align = "center">System Clock Frequency</h3><br>
+        <p align="center">
+        System Clock Frequency: <input type="text" name="search"> (in MHz)</p>
+        </div>
 
+    </div>
+    <br>
+    <div class="wrap">
+
+        <div class="left">
+        <h3 align = "center">Pre-emphasis</h3><br>
+     <!--  <img src="pre-emphasis.png" align="right"> --><p>
+        Tap1: <input type="text" name="search"><br><br>Tap2: <input type="text" name="search"><br><br>Tap3: <input type="text" name="search"></p>
+        </div>
+
+        <div class="right bg-alt"><h3 align = "center">Bit Error Rate</h3><br>
+        <p align="center">
+        BER for configuration is: <input type="text" name="search"></p>
+        </div>
+        </div>
+    <p = align="right">
+    <button class="button">Submit</button>
+    </p>
     </div>
 </body>
 </html>
