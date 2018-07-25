@@ -1,0 +1,8 @@
+ctrl_sig = 1 => reset - yes
+ctrl_sig = 2 => reset - no
+wanted_cl_val => clock frequency
+control = 0 => PRBS-13
+control = 1 => PRBS-7
+taps[0] = Tap1
+taps[1] = Tap2
+taps[2] = Tap3
