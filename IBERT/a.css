@@ -1,0 +1,136 @@
+/*.flex-container{
+
+    width: 100vw;
+
+    min-height: 250px;
+
+    margin: 0 auto;
+
+    display: -webkit-flex;     
+
+    display: flex; 
+
+}
+
+.flex-container .column{
+
+    padding: 10px;
+
+    background: #dbdfe5;
+
+    -webkit-flex: 1; 
+
+    -ms-flex: 1; 
+
+    flex: 1; 
+
+}
+
+.flex-container .column.bg-alt{
+
+    background: #b4bac0;
+
+}*/
+p {
+	color:white;
+ /* color : #006994 ;*/
+}
+h3 {
+  font: italic bold ;
+  text-transform: uppercase; 
+  color:white;
+}
+body {
+     background: black url("try.jpg") ;
+    /* background: #FFCC66; */
+     /*background: #FFFFFF;*/
+     background-repeat: no-repeat;
+     background-position: center;
+         background-size: cover;
+}   
+.wrap {
+   text-align: center;
+    /*color:white;*/
+     width: 100vw;
+    min-height: 250px;
+    margin: 0 auto;
+    display: -webkit-flex;     
+    display: flex; 
+}
+.left, .right{
+        float:left;
+    }
+
+    .left{
+  /*       background: #dbdfe5;
+   */     width: 50vw;
+        transition: width 1s ;
+        border: 1px solid white; 
+    }
+
+    .right{
+    /*    background: #b4bac0;
+     */   width: 50vw;
+        transition: width 1s;
+        border: 0.5px solid white; 
+    }
+/*
+    .left:hover{
+        width: 100vw;
+    }
+     .right:hover{
+        width: 500vw;
+    }
+
+    .left:hover + .right{
+        width: 10vw;
+    }
+     .right:hover + .left{
+        width: 10vw;
+    }
+*/
+.a {
+    /*color:green;*/
+    text-transform: capitalize; 
+}
+input[type=text] {
+  width: 100px;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+}
+input[type=text]:focus {
+  width: 250px;
+}
+.wrap img
+{
+    /*float:right center;*/
+    width: 300px ; 
+    height: 200px;      
+}
+.button {
+    background-color: #4CAF50;
+/*  background-color: green;*/
+    border: none;
+      color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: green; 
+/* background-color: blue;*/
+}
+.loader {
+position: absolute;
+left: 50%;
+top: 50%;
+z-index: 1;
+height: 150px;
+margin: -75px 0 0 -75px;
+}
+.body-loader {
+background: lightslategrey;
+}
+

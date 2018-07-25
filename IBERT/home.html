@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="a.css">
+    <script type="text/javascript" src="jquery.js" ></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+	<title> IBERT</title>
+</head>
+<body>
+<div class="a" >
+
+	<h3 align = "center"><b>Integrated bit Error Ratio Tester</b></h3>
+	</div>	
+    <div class="wrap" >
+
+        <div class ='left'>
+        <h3 align = "center">Channel Reset</h3><br><p>
+        <label for="input1 ">Select Yes or No ?</label>
+        </p>
+        <p>
+        <input type="radio" name="input1" checked value="1">Yes</input>
+        </p>
+        <p>
+        <input type="radio" name="input1" value="2">No</input>
+        </p>
+        </div>
+
+        <div class ='right'>
+        <h3 align = "center">Clock Frequency</h3><br><p align="center">
+        Clock Frequency: <input id="clock" type="text" name="search"> (in MHz)</p>
+        </div>
+
+    </div>
+    <br>
+    <div class="wrap a">
+
+        <div class="left">
+        <h3 align = "center">Test Pattern</h3><br><p>
+        <label for="input2">Select the Test Pattern?</label></p>
+        <p>
+        <input type="radio" name="input2" checked value="1">PRBS-7</input>
+        </p>
+        <p>
+        <input type="radio" name="input2" value="0">PRBS-13</input>
+        </p>
+        </div>
+
+        <div class="right bg-alt">
+        <h3 align = "center">System Clock Frequency</h3><br>
+        <p align="center">
+        System Clock Frequency: <input type="text" name="search"> (in MHz)</p>
+        </div>
+
+    </div>
+    <br>
+    <div class="wrap">
+
+        <div class="left">
+        <h3 align = "center">Pre-emphasis</h3><br>
+     <!--  <img src="pre-emphasis.png" align="right"> --><p>
+        Tap1: <input type="text" id="tap1" name="search"><br><br>Tap2: <input id="tap2" type="text" name="search"><br><br>Tap3: <input id="tap3" type="text" name="search"></p>
+        </div>
+
+        <div class="right bg-alt"><h3 align = "center">Bit Error Rate</h3><br>
+        <p align="center">
+        BER for configuration is: <input id="sol" type="text" name="search"></p>
+        </div>
+        </div>
+    <p = align="right">
+    <button class="button submit">Submit</button>
+    </p>
+    </div>
+    <img class="loader" style="display: none" id="loader" src="loader.gif">
+
+    <script src="index.js" ></script>
+</body>
+</html>

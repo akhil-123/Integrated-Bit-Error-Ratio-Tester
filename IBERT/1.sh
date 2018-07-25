@@ -1,0 +1,1 @@
+yosys> read_verilog transmit.v mux.v error.v comp.v DFF.v seven.v thirteen.v choose.v preemph.v test_control.v DCW.v combined.v
