@@ -1,4 +1,9 @@
-
+/* 	Module for PRBS-13	*/
+/* 
+This module generated PRBS-13 pattern, here the input control is send by user.
+If control =  1, then output of this module will be 0
+and if control = 0, then the output of this module will be PRBS-7
+*/
 module thirteen (
     input control,
     input clock,
