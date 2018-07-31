@@ -1,3 +1,5 @@
+# Script for doing synthesis
+# Type command "yosys synth.ys" on terminal to execute this script 
 read_verilog transmit.v mux.v error.v comp.v DFF.v seven.v thirteen.v choose.v preemph.v test_control.v DCW.v combined.v 
 hierarchy; proc; opt; techmap; opt
 synth -top combined
