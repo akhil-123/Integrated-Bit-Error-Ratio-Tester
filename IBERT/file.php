@@ -1,12 +1,12 @@
 <?php
  $file = 'file_to_edit.v';
 
-$input1 = $_REQUEST['input1'];
-$input2 = $_REQUEST['input2'];
-$tap1 = $_REQUEST['tap1'];
-$tap2 = $_REQUEST['tap2'];
-$tap3 = $_REQUEST['tap3'];
-$clock = $_REQUEST['clock'] * 1000000;
+$input1 = $_REQUEST['input1']; // sets value for control signal which controls reset
+$input2 = $_REQUEST['input2']; // sets value for control to choose between PRBS-7 or PRBS-13
+$tap1 = $_REQUEST['tap1']; // Tap 1 value for pre-emphasis
+$tap2 = $_REQUEST['tap2']; // Tap 2 value for pre-emphasis
+$tap3 = $_REQUEST['tap3']; // Tap 3 value for pre-emphasis
+$clock = $_REQUEST['clock'] * 1000000; // The clock frequency user wants
 // echo $clock;die;
 $fp = fopen($file, 'w');
  $str = '`timescale 1ps / 1ps 
@@ -111,7 +111,7 @@ endmodule
 // }
 
 // exec_callback("iverilog -o simple.vvp transmit.v mux.v error.v comp.v DFF.v seven.v thirteen.v choose.v preemph.v test_control.v DCW.v combined.v file_to_edit.v | vvp simple.vvp", 'print_lines');
-unlink('simple.vvp');
+unlink('simple.vvp'); // deletes simple.vvp every time the script is executed
 system("iverilog -o simple.vvp transmit.v mux.v error.v comp.v DFF.v seven.v thirteen.v choose.v preemph.v test_control.v DCW.v combined.v file_to_edit.v");
  
  // die;
@@ -139,7 +139,7 @@ $input2 = $line;
 }
 $i++;
 }
-echo $input1/$input2*100; 
+echo $input1/$input2*100; // This is the final BER in percentage
 // exec('chmod -R 777 .');
 // unlink(file.txt);
 // unlink(file1.txt);
