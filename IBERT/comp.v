@@ -1,3 +1,7 @@
+ 					/*   "Comparator Module"   */
+/*
+This Module compares the transmitted and received pattern and calculates the error.
+*/
 module comp
 (
 	input [12:0] A,
