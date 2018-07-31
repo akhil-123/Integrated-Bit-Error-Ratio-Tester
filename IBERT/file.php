@@ -139,7 +139,7 @@ $input2 = $line;
 }
 $i++;
 }
-echo $input1/$input2*100; // This is the final BER in percentage
+echo $input1/$input2*100; // This is the final BER in percentage, remove 100 if BER is not wanted in percentage
 // exec('chmod -R 777 .');
 // unlink(file.txt);
 // unlink(file1.txt);
