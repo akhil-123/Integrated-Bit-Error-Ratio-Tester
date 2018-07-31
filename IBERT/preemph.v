@@ -1,9 +1,12 @@
-
+/* Pre-Emphasis Module */
+/* 
+This module is use to perform pre-emphasis based on the tap values user inputs
+*/
 module preemph(
-input clk,
-input signed [2:0]taps,
+input clk, // This clock is not the system clock but the reference clock which data channel wrapper module generates based on what user wants
+input signed [2:0]taps, // The tap values which user inputs.
 input signed [12:0] a,
-output reg signed [12:0] b
+output reg signed [12:0] b // The ouput of pre-emphasis filter
 );
     wire signed   [12:0] MCM1,MCM2,MCM3,add_out1,add_out2;
     wire signed     [12:0] Q1,Q2,Q3;
