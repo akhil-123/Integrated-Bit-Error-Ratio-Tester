@@ -1,3 +1,7 @@
+/* 
+This is the test bench for the combined Module.
+*/
+
 `timescale 1ps / 1ps 
 module final_testbench;
  reg control;
@@ -33,9 +37,9 @@ wire [12:0] error;
   forever
    #50 clock = ~clock;
   end
-   
+  // Uncomment line 42 and 43, if you want to plot the waveform using gtkwave 
  initial begin
- //$dumpfile("sim.vcd");
+ //$dumpfile("sim.vcd"); 
  //$dumpvars(0,final_testbench);
   normal_input = -13'd5;
 taps[0] = 0;
