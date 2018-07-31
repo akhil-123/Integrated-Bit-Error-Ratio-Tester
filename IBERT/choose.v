@@ -1,4 +1,8 @@
-
+/*
+This Module chooses between PRBS-7 or PRBS-13.
+If the input control is 0, PRBS-13 is selected 
+and if control is 1, PRBS-7 is selected
+*/
 module choose(
 	input control,
 	input clock,
