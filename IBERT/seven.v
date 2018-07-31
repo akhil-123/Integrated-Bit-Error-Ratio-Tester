@@ -1,3 +1,9 @@
+/* 	Module for PRBS-7	*/
+/* 
+This module generated PRBS-7 pattern, here the input control is send by user.
+If control =  0, then output of this module will be 0
+and if control = 1, then the output of this module will be PRBS-7
+*/
 module seven (
     input control,
     input clock,
