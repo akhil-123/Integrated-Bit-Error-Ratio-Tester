@@ -1,4 +1,10 @@
-
+/*		Test Controller Module		*/
+/* This Module controls all the modules except the data channel wrapper module.
+1. It sends control signals to tansmit module to choose between PRBS-7 and PRBS-13.
+2. It sends control signals to error adder module to add error to transmitted module.
+3. It sends control signals to mux to chooses between normal input or PRBS.
+4. It sends control signals to comparator module which tells error.
+*/
 module test_control(
 input control,
 input sel,
