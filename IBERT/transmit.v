@@ -1,4 +1,8 @@
-
+/*      Transmit Module       */
+/*
+This module sends control signals to choose module to select between PRBS-7 and PRBS-13.
+It also ask pre-emphasis module to perform pre-emphasis based on tap values given by user.
+*/
 module transmit(
 input control ,
 input clk ,
