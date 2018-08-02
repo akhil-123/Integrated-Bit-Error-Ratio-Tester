@@ -36,13 +36,13 @@ else begin
   temp = 1;
 end
 end
-
+/*
 always@(*)
 begin
 if(temp==0)begin
 ref_clock = clock ;end
 end
-
+*/
 always @(*)begin
 
 if(ctrl_sig==1)begin
