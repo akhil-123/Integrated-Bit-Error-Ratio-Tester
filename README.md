@@ -30,4 +30,6 @@ sudo apt-get install iverilog
 7. Now set the parameters that you want and click on submit button
 8. On clicking the button you can see the BER as output.
 
+Apart from this if you want to synthesize the codes, type command on terminal :
+yosys synth.ys
 
