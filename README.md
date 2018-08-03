@@ -4,7 +4,7 @@ In this repository you can find the modules of Integrated Bit error ratio tester
 This repository has following files :
 
 
-Individual Modules :
+Individual Modules :<br />
 1. [PRBS-7](https://github.com/akhil-123/Integrated-Bit-Error-Ratio-Tester/tree/master/PRBS-7) : This folder contains the PRBS-7 generator (LFSR.v) and the testbench for same (test.v)
 2. [PRBS-13](https://github.com/akhil-123/Integrated-Bit-Error-Ratio-Tester/tree/master/PRBS-13) : This folder contains the PRBS-13 generator (LFSR.v) and the testbench for same (test.v)
 3. [Data Channel Wrapper Module](https://github.com/akhil-123/Integrated-Bit-Error-Ratio-Tester/tree/master/Data_channel_wrappper) : This folder contains the data channel wrapper module (DCW.v) which generates reference clock and also decides whether to reset the channel or not. It also contains the testbench for the same (test_DCW.v).
@@ -17,7 +17,7 @@ Individual Modules :
 10. [GUI](https://github.com/akhil-123/Integrated-Bit-Error-Ratio-Tester/tree/master/GUI) : This folder contains the html and css file i.e only frontend of the GUI made to change the parameters.
 
 
-Final Combined Module : 
+Final Combined Module :<br /> 
 [IBERT](https://github.com/akhil-123/Integrated-Bit-Error-Ratio-Tester/tree/master/IBERT) : 
 This folder contains all modules connected. To use these files follow these steps :
 1. If you haven't php and apache installed on you machine, follow this [link](https://www.vultr.com/docs/how-to-install-apache-mysql-and-php-on-ubuntu-16-04)
@@ -30,6 +30,6 @@ sudo apt-get install iverilog
 7. Now set the parameters that you want and click on submit button
 8. On clicking the button you can see the BER as output.
 
-Apart from this if you want to synthesize the codes, type command on terminal :
+Apart from this if you want to synthesize the codes, type command on terminal :<br />
 yosys synth.ys
 
