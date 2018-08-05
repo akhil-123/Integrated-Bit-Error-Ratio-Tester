@@ -25,7 +25,7 @@ This folder contains all modules connected. To use these files follow these step
 sudo apt-get install iverilog
 3. Now download this repository [IBERT](https://github.com/akhil-123/Integrated-Bit-Error-Ratio-Tester/tree/master/IBERT).
 4. Unzip all the files to /var/www/html
-5. Type command to grant permission : sudo chmod -R 777
+5. Type command to grant permission : sudo chmod -R 777 .
 6. Now open the browser and type localhost/home.html
 7. Now set the parameters that you want and click on submit button
 8. On clicking the button you can see the BER as output.
