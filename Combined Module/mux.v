@@ -2,7 +2,7 @@
 module mux(
 input sel,
 input [12:0] a ,
-input [12:0] b ,
+input b ,
 output reg[12:0] c 
 );
 

@@ -11,19 +11,19 @@ input sel,
 input reset,
 input clock,
 input signed [2:0] taps,
-input [12:0] normal_input,
+input normal_input,
 output  [12:0] error,
 output  reg [12:0] total_error,
-output reg [31:0] count
+output reg [15:0] count
 );
 wire signed [12:0] corrupted,original,test_pattern;
-wire signed [31:0] count1 ;
+wire signed [15:0] count1 ;
 wire signed [12:0] sum_error;
 reg [10:0] flag;
 
 initial begin
 	 total_error [12:0] <= 13'b0;
-	 count [31:0] <= 0;
+	 count [15:0] <= 0;
 	 flag [10:0] <= 0 ;
 end
 

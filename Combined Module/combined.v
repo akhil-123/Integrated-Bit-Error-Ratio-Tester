@@ -12,10 +12,10 @@ input [2:0] val,
 input [24:0] wanted_cl_val ,// This input refers to clock frequency that the user wants.
 input clock, // The System Clock frequency
 input signed [2:0] taps, // The tap values for pre-emphasis
-input [12:0] normal_input,
+input normal_input,
 output  [12:0] error,
 output   [12:0] total_error, // The total number of errors 
-output [31:0] count // The number of bits transmitted 
+output [15:0] count // The number of bits transmitted 
 );
 wire channel_reset ;
 wire [2:0] datawidth; 

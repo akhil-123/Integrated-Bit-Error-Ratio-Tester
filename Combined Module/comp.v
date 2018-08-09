@@ -8,12 +8,12 @@ module comp
 	input [12:0] B, 
 	output reg [12:0] error,
 	output reg [12:0] total_error,
-	output reg [31:0] count1
+	output reg [15:0] count1
 );
 initial begin
 	error[12:0] <= 13'b0;
 	total_error[12:0] <= 13'b0;
-	count1[31:0] <= 13'b0;
+	count1[15:0] <= 13'b0;
 end
 always @(A or B)
 begin 
