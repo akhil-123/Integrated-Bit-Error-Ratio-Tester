@@ -14,13 +14,13 @@ assign  er = A^make_error ;
 The Random function is used so as to make the error adder module like a real world error prone channel which is random
 */
 always @(A)begin
-if (($random % 2 & 2'b01)==0)begin
+if (A[0]==1 || A[3]==1)begin
    make_error <= 13'h01;
 end 
 else begin
    make_error <= 13'h00;
 end
-if (($random % 2 & 2'b11)==0)begin
+if ((A[1])==1 || A[4]==1)begin
    make_error <= 13'h01;
 end 
 else begin
