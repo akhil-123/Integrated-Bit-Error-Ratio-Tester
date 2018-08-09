@@ -1,0 +1,573 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Aug  9 22:42:29 2018
+| Host         : Ishan running 64-bit major release  (build 9200)
+| Command      : report_methodology -file combined_methodology_drc_routed.rpt -pb combined_methodology_drc_routed.pb -rpx combined_methodology_drc_routed.rpx
+| Design       : combined
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 107
++-----------+----------+------------------------------+------------+
+| Rule      | Severity | Description                  | Violations |
++-----------+----------+------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert | 2          |
+| TIMING-17 | Warning  | Non-clocked sequential cell  | 60         |
+| TIMING-20 | Warning  | Non-clocked latch            | 1          |
+| TIMING-23 | Warning  | Combinational loop found     | 44         |
++-----------+----------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell d1/channel_reset_inferred__0/i_, with 2 or more inputs, drives asynchronous reset pin(s) d1/channel_reset_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell test/t1/p1/total_error_reg[12]_i_2, with 2 or more inputs, drives asynchronous reset pin(s) test/total_error_reg[0]/CLR, test/total_error_reg[10]/CLR, test/total_error_reg[11]/CLR, test/total_error_reg[12]/CLR, test/total_error_reg[1]/CLR, test/total_error_reg[2]/CLR, test/total_error_reg[3]/CLR, test/total_error_reg[4]/CLR, test/total_error_reg[5]/CLR, test/total_error_reg[6]/CLR, test/total_error_reg[7]/CLR, test/total_error_reg[8]/CLR, test/total_error_reg[9]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Warning
+Non-clocked sequential cell  
+The clock pin d1/counter_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Warning
+Non-clocked sequential cell  
+The clock pin d1/ref_clock_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/s1/random_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/s1/random_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/s1/random_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/s1/random_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/s1/random_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/s1/random_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/s1/random_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/tt1/random_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/tt1/random_reg[10]_srl6___test_t1_cc1_tt1_random_reg_r_4/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/tt1/random_reg[11]_test_t1_cc1_tt1_random_reg_r_5/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/tt1/random_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/tt1/random_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/tt1/random_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/tt1/random_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/tt1/random_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/tt1/random_reg_r/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#43 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/tt1/random_reg_r_0/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#44 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/tt1/random_reg_r_1/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#45 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/tt1/random_reg_r_2/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#46 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/tt1/random_reg_r_3/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#47 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/tt1/random_reg_r_4/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#48 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/cc1/tt1/random_reg_r_5/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#49 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/p1/b_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#50 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/p1/b_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#51 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/p1/dff1/Q_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#52 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/p1/dff1/Q_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#53 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/p1/dff1/Q_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#54 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/p1/dff1/Q_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#55 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/p1/dff1/Q_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#56 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/p1/dff2/Q_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#57 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/p1/dff2/Q_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#58 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/p1/dff2/Q_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#59 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/p1/dff2/Q_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#60 Warning
+Non-clocked sequential cell  
+The clock pin test/t1/p1/dff2/Q_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch d1/channel_reset_reg cannot be properly analyzed as its control pin d1/channel_reset_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-23#1 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count0_carry/S[3] and test/count0_carry/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#2 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count0_carry__0/S[0] and test/count0_carry__0/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#3 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count0_carry__0/S[1] and test/count0_carry__0/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#4 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count0_carry__0/S[2] and test/count0_carry__0/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#5 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count0_carry__0/S[3] and test/count0_carry__0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#6 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count0_carry__1/S[0] and test/count0_carry__1/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#7 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count0_carry__1/S[1] and test/count0_carry__1/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#8 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count0_carry__1/S[2] and test/count0_carry__1/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#9 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count0_carry__1/S[3] and test/count0_carry__1/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#10 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count0_carry__2/S[0] and test/count0_carry__2/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#11 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count0_carry__2/S[1] and test/count0_carry__2/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#12 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count0_inferred__0/i__carry/S[1] and test/count0_inferred__0/i__carry/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#13 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count0_inferred__0/i__carry/S[2] and test/count0_inferred__0/i__carry/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#14 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count_OBUF[0]_inst_i_15/I3 and test/count_OBUF[0]_inst_i_15/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#15 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count_OBUF[0]_inst_i_19/I2 and test/count_OBUF[0]_inst_i_19/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#16 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count_OBUF[0]_inst_i_22/I0 and test/count_OBUF[0]_inst_i_22/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#17 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count_OBUF[0]_inst_i_23/I3 and test/count_OBUF[0]_inst_i_23/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#18 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count_OBUF[0]_inst_i_4/I4 and test/count_OBUF[0]_inst_i_4/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#19 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count_OBUF[1]_inst_i_18/I3 and test/count_OBUF[1]_inst_i_18/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#20 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count_OBUF[1]_inst_i_22/I2 and test/count_OBUF[1]_inst_i_22/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#21 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count_OBUF[1]_inst_i_27/I3 and test/count_OBUF[1]_inst_i_27/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#22 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count_OBUF[1]_inst_i_28/I1 and test/count_OBUF[1]_inst_i_28/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#23 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count_OBUF[1]_inst_i_31/I3 and test/count_OBUF[1]_inst_i_31/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#24 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count_OBUF[1]_inst_i_32/I3 and test/count_OBUF[1]_inst_i_32/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#25 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count_OBUF[1]_inst_i_4/I2 and test/count_OBUF[1]_inst_i_4/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#26 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count_OBUF[1]_inst_i_62/I5 and test/count_OBUF[1]_inst_i_62/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#27 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count_OBUF[1]_inst_i_67/I3 and test/count_OBUF[1]_inst_i_67/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#28 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/count_OBUF[1]_inst_i_7/I5 and test/count_OBUF[1]_inst_i_7/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#29 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/i__carry__0_i_1/I2 and test/i__carry__0_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#30 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/i__carry__0_i_2/I2 and test/i__carry__0_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#31 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/i__carry__0_i_3/I2 and test/i__carry__0_i_3/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#32 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/i__carry__0_i_4/I2 and test/i__carry__0_i_4/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#33 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/i__carry__1_i_1/I2 and test/i__carry__1_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#34 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/i__carry__1_i_2/I2 and test/i__carry__1_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#35 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/i__carry__1_i_3/I2 and test/i__carry__1_i_3/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#36 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/i__carry__1_i_4/I2 and test/i__carry__1_i_4/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#37 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/i__carry__2_i_1/I2 and test/i__carry__2_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#38 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/i__carry__2_i_2/I2 and test/i__carry__2_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#39 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/i__carry__2_i_3/I2 and test/i__carry__2_i_3/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#40 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/i__carry_i_7/I5 and test/i__carry_i_7/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#41 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/t1/p1/count0_carry_i_3/I2 and test/t1/p1/count0_carry_i_3/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#42 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/t1/p1/count0_carry_i_4/I1 and test/t1/p1/count0_carry_i_4/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#43 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/t1/p1/count0_carry_i_5/I2 and test/t1/p1/count0_carry_i_5/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#44 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between test/t1/p1/count_OBUF[0]_inst_i_1/I5 and test/t1/p1/count_OBUF[0]_inst_i_1/O to disable the timing loop
+Related violations: <none>
+
+

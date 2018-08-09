@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Aug  9 22:50:30 2018
+# Process ID: 7932
+# Current directory: E:/akhil/Combined Module/ibert_final/ibert_final.runs/impl_1
+# Command line: vivado.exe -log combined.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source combined.tcl -notrace
+# Log file: E:/akhil/Combined Module/ibert_final/ibert_final.runs/impl_1/combined.vdi
+# Journal file: E:/akhil/Combined Module/ibert_final/ibert_final.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source combined.tcl -notrace
