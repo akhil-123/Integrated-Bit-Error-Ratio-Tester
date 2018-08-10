@@ -1,0 +1,467 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Aug 10 14:40:39 2018
+# Process ID: 5228
+# Current directory: C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/Combined/mine/mine.runs/synth_1
+# Command line: vivado.exe -log combined.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source combined.tcl
+# Log file: C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/Combined/mine/mine.runs/synth_1/combined.vds
+# Journal file: C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/Combined/mine/mine.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source combined.tcl -notrace
+Command: synth_design -top combined -part xc7a15tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a15t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a15t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7332 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 372.574 ; gain = 98.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'combined' [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/combined.v:7]
+INFO: [Synth 8-6157] synthesizing module 'DCW' [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/DCW.v:7]
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/DCW.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'DCW' (1#1) [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/DCW.v:7]
+INFO: [Synth 8-6157] synthesizing module 'test_control' [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/test_control.v:8]
+INFO: [Synth 8-6157] synthesizing module 'transmit' [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/transmit.v:6]
+INFO: [Synth 8-6157] synthesizing module 'choose' [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/choose.v:6]
+INFO: [Synth 8-6157] synthesizing module 'seven' [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/seven.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'seven' (2#1) [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/seven.v:5]
+INFO: [Synth 8-6157] synthesizing module 'thirteen' [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/thirteen.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'thirteen' (3#1) [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/thirteen.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'choose' (4#1) [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/choose.v:6]
+INFO: [Synth 8-6157] synthesizing module 'preemph' [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/preemph.v:5]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/DFF.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (5#1) [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/DFF.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'preemph' (6#1) [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/preemph.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'transmit' (7#1) [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/transmit.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mux' [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/mux.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (8#1) [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/mux.v:2]
+INFO: [Synth 8-6157] synthesizing module 'error' [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/error.v:5]
+WARNING: [Synth 8-567] referenced signal 'er' should be on the sensitivity list [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/error.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'error' (9#1) [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/error.v:5]
+INFO: [Synth 8-6157] synthesizing module 'comp' [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/comp.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'comp' (10#1) [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/comp.v:5]
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/test_control.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'test_control' (11#1) [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/test_control.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'combined' (12#1) [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/combined.v:7]
+WARNING: [Synth 8-3331] design thirteen has unconnected port control
+WARNING: [Synth 8-3331] design seven has unconnected port control
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 427.094 ; gain = 153.406
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 427.094 ; gain = 153.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 427.094 ; gain = 153.406
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a15tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/Combined/mine/mine.srcs/ibert/new/ibert.xdc]
+Finished Parsing XDC File [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/Combined/mine/mine.srcs/ibert/new/ibert.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/Combined/mine/mine.srcs/ibert/new/ibert.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/combined_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/combined_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 754.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 754.688 ; gain = 481.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a15tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 754.688 ; gain = 481.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 754.688 ; gain = 481.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/DCW.v:26]
+INFO: [Synth 8-5544] ROM "channel_reset" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "channel_reset" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'channel_reset_reg' [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/DCW.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'datawidth_reg' [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/DCW.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'pattern_reg' [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/choose.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg' [C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/mux.v:11]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 754.688 ; gain = 481.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     25 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 1     
+	  13 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     13 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 5     
+	               11 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 7     
+	   2 Input     11 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DCW 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     25 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module seven 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+Module thirteen 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+Module choose 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+Module DFF 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 1     
+Module preemph 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 1     
+Module mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+Module error 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     13 Bit         XORs := 1     
+Module comp 
+Detailed RTL Component Info : 
++---Adders : 
+	  13 Input      5 Bit       Adders := 1     
+Module test_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 5     
+	   2 Input     11 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 45 (col length:60)
+BRAMs: 50 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (d1/datawidth_reg[2]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (d1/datawidth_reg[1]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (d1/datawidth_reg[0]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/cc1/pattern_reg[12]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/cc1/pattern_reg[11]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/cc1/pattern_reg[10]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/cc1/pattern_reg[9]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/cc1/pattern_reg[8]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/cc1/pattern_reg[7]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/cc1/pattern_reg[6]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/cc1/pattern_reg[5]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/cc1/pattern_reg[4]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/cc1/pattern_reg[3]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/cc1/pattern_reg[2]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/cc1/pattern_reg[1]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/cc1/pattern_reg[0]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/m1/c_reg[12]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/m1/c_reg[11]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/m1/c_reg[10]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/m1/c_reg[9]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/m1/c_reg[8]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/m1/c_reg[7]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/m1/c_reg[6]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/m1/c_reg[5]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/m1/c_reg[4]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/m1/c_reg[3]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/m1/c_reg[2]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/m1/c_reg[1]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/m1/c_reg[0]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/dff1/Q_reg[12]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/dff1/Q_reg[11]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/dff1/Q_reg[10]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/dff1/Q_reg[9]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/dff1/Q_reg[8]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/dff1/Q_reg[7]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/dff1/Q_reg[6]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/dff1/Q_reg[5]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/dff2/Q_reg[12]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/dff2/Q_reg[11]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/dff2/Q_reg[10]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/dff2/Q_reg[9]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/dff2/Q_reg[8]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/dff2/Q_reg[7]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/dff2/Q_reg[6]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/dff2/Q_reg[5]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/b_reg[12]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/b_reg[11]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/b_reg[10]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/b_reg[9]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/b_reg[8]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/b_reg[7]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/b_reg[6]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/b_reg[5]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/b_reg[3]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/b_reg[2]) is unused and will be removed from module combined.
+WARNING: [Synth 8-3332] Sequential element (test/t1/p1/b_reg[0]) is unused and will be removed from module combined.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 754.688 ; gain = 481.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 754.688 ; gain = 481.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 754.688 ; gain = 481.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 763.344 ; gain = 489.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 763.344 ; gain = 489.656
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 763.344 ; gain = 489.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 763.344 ; gain = 489.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 763.344 ; gain = 489.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 763.344 ; gain = 489.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 763.344 ; gain = 489.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|combined    | test/t1/cc1/tt1/random_reg[12] | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    35|
+|3     |LUT1   |     6|
+|4     |LUT2   |    20|
+|5     |LUT3   |    70|
+|6     |LUT4   |    22|
+|7     |LUT5   |    34|
+|8     |LUT6   |     5|
+|9     |SRL16E |     1|
+|10    |FDRE   |    91|
+|11    |FDSE   |     8|
+|12    |LDP    |     1|
+|13    |IBUF   |    34|
+|14    |OBUF   |    42|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+-------------+------+
+|      |Instance     |Module       |Cells |
++------+-------------+-------------+------+
+|1     |top          |             |   371|
+|2     |  d1         |DCW          |    90|
+|3     |  test       |test_control |   203|
+|4     |    t1       |transmit     |    82|
+|5     |      cc1    |choose       |    40|
+|6     |        s1   |seven        |     8|
+|7     |        tt1  |thirteen     |    32|
+|8     |      p1     |preemph      |    42|
+|9     |        dff1 |DFF          |     6|
+|10    |        dff2 |DFF_0        |     5|
++------+-------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 763.344 ; gain = 489.656
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 60 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 763.344 ; gain = 162.063
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 763.344 ; gain = 489.656
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDP => LDPE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 65 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 773.766 ; gain = 512.227
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/GSOC/Integrated-Bit-Error-Ratio-Tester-master/Combined Module/Combined/mine/mine.runs/synth_1/combined.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file combined_utilization_synth.rpt -pb combined_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 773.766 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 10 14:41:24 2018...
