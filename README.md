@@ -34,5 +34,5 @@ Apart from this if you want to synthesize the codes, follow this link to install
 yosys synth.ys
 
 Project files: It contains the codes, xdc files, implemented design and run summary of vivado.<br /> 
-1. [Cmod A7 t-15] (https://github.com/akhil-123/Integrated-Bit-Error-Ratio-Tester/tree/master/Cmod-A7-t15)
-2. [Cmod A7 t-35] (https://github.com/akhil-123/Integrated-Bit-Error-Ratio-Tester/blob/master/Cmod-A7-t35.zip)
+1. [Cmod A7 t-15](https://github.com/akhil-123/Integrated-Bit-Error-Ratio-Tester/tree/master/Cmod-A7-t15)
+2. [Cmod A7 t-35](https://github.com/akhil-123/Integrated-Bit-Error-Ratio-Tester/blob/master/Cmod-A7-t35.zip)
